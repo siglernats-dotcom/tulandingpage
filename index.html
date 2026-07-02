@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+  <!-- SEO: Title optimizado -->
+  <title>Landing Pages que Convierten | SEO + WhatsApp | – Web Architects</title>
+
+  <!-- SEO: Meta description -->
+  <meta name="description" content="Creamos landing pages profesionales con SEO, botón de WhatsApp y llamados a la acción que generan clientes reales. Hosting y dominio incluidos por $4,599 MXN. Morelos, México." />
+
+  <!-- SEO: Keywords -->
+  <meta name="keywords" content="landing page Morelos, páginas web Cuernavaca, diseño web México, SEO local, catálogo WhatsApp, páginas web baratas México" />
+
+  <!-- Open Graph - para WhatsApp, Facebook, Instagram -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://patrianos.github.io/tulandingpage/" />
+  <meta property="og:title" content="Landing Pages que Convierten | Web Architects Morelos" />
+  <meta property="og:description" content="Tu página web profesional con SEO, WhatsApp y diseño que vende. Hosting + dominio incluidos. Solo $4,599 MXN — Todo incluido." />
+  <meta property="og:image" content="https://patrianos.github.io/tulandingpage/landing1.png" />
+  <meta property="og:locale" content="es_MX" />
+  <meta property="og:site_name" content="Web Architects" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Landing Pages que Convierten | Web Architects Morelos" />
+  <meta name="twitter:description" content="Tu página web profesional con SEO y WhatsApp integrado. Hosting + dominio incluidos. $4,599 MXN todo incluido." />
+  <meta name="twitter:image" content="https://patrianos.github.io/tulandingpage/landing1.png" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://patrianos.github.io/tulandingpage/" />
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --verde: #25D366;
+      --verde-dark: #128C7E;
+      --negro: #0f0f0f;
+      --blanco: #ffffff;
+      --gris-claro: #f5f5f0;
+      --gris-texto: #555;
+      --acento: #1a1a2e;
+      --acento2: #e8ff33;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--blanco);
+      color: var(--negro);
+      line-height: 1.6;
+    }
+
+    /* ===== HEADER ===== */
+    header {
+      background: var(--negro);
+      color: var(--blanco);
+      padding: 18px 24px; /* Un poco más de aire vertical */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-img {
+      height: 65px; /* Ajuste drástico para que tenga presencia real en pantalla */
+      width: auto;
+      object-fit: contain;
+    }
+
+    .header-right-container {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .header-cta {
+      background: var(--verde);
+      color: var(--blanco);
+      padding: 10px 22px;
+      border-radius: 50px;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: background 0.2s;
+    }
+
+    .header-cta:hover { background: var(--verde-dark); }
+
+    /* ===== HERO ===== */
+    .hero {
+      background: var(--negro);
+      color: var(--blanco);
+      padding: 72px 24px 80px;
+      text-align: center;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(232,255,51,0.12);
+      color: var(--acento2);
+      border: 1px solid rgba(232,255,51,0.3);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 50px;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-family: 'Sora', sans-serif;
+      font-size: clamp(28px, 6vw, 52px);
+      font-weight: 700;
+      line-height: 1.15;
+      margin-bottom: 20px;
+      max-width: 760px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero h1 em {
+      font-style: normal;
+      color: var(--acento2);
+    }
+
+    .hero-sub {
+      font-size: clamp(15px, 2.5vw, 18px);
+      color: rgba(255,255,255,0.65);
+      max-width: 560px;
+      margin: 0 auto 36px;
+    }
+
+    .precio-badge {
+      font-size: 13px;
+      color: rgba(255,255,255,0.5);
+      margin-bottom: 10px;
+    }
+
+    .precio-badge strong {
+      font-size: 22px;
+      color: var(--blanco);
+      font-family: 'Sora', sans-serif;
+    }
+
+    .hero-btns {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 8px;
+    }
+
+    .btn-primary {
+      background: var(--verde);
+      color: var(--blanco);
+      padding: 16px 32px;
+      border-radius: 50px;
+      font-size: 16px;
+      font-weight: 700;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: transform 0.15s, background 0.2s;
+      box-shadow: 0 4px 20px rgba(37,211,102,0.3);
+    }
+
+    .btn-primary:hover { background: var(--verde-dark); transform: translateY(-2px); }
+
+    .btn-secondary {
+      background: transparent;
+      color: var(--blanco);
+      padding: 16px 28px;
+      border-radius: 50px;
+      font-size: 15px;
+      font-weight: 500;
+      text-decoration: none;
+      border: 1px solid rgba(255,255,255,0.25);
+      transition: border-color 0.2s;
+    }
+
+    .btn-secondary:hover { border-color: rgba(255,255,255,0.6); }
+
+    .urgencia {
+      margin-top: 18px;
+      font-size: 13px;
+      color: rgba(255,255,255,0.45);
+    }
+
+    .urgencia span { color: #ff6b6b; font-weight: 600; }
+
+    /* ===== BENEFICIOS ===== */
+    .beneficios {
+      background: var(--gris-claro);
+      padding: 64px 24px;
+    }
+
+    .section-label {
+      text-align: center;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gris-texto);
+      margin-bottom: 10px;
+    }
+
+    .section-title {
+      font-family: 'Sora', sans-serif;
+      font-size: clamp(22px, 4vw, 34px);
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 48px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .beneficios-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    .benefit-card {
+      background: var(--blanco);
+      border-radius: 16px;
+      padding: 28px 24px;
+      border: 1px solid #e8e8e0;
+    }
+
+    .benefit-icon {
+      font-size: 28px;
+      margin-bottom: 14px;
+      display: block;
+    }
+
+    .benefit-card h3 {
+      font-family: 'Sora', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .benefit-card p {
+      font-size: 14px;
+      color: var(--gris-texto);
+      line-height: 1.6;
+    }
+
+    /* ===== QUÉ INCLUYE ===== */
+    .incluye {
+      padding: 72px 24px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .incluye-lista {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 14px;
+      margin-top: 40px;
+    }
+
+    .incluye-lista li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 15px;
+      padding: 16px 18px;
+      background: var(--gris-claro);
+      border-radius: 12px;
+    }
+
+    .check {
+      width: 22px;
+      height: 22px;
+      background: var(--negro);
+      color: var(--acento2);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: 700;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    /* ===== PORTAFOLIO ===== */
+    .portafolio {
+      background: var(--negro);
+      padding: 72px 24px;
+      color: var(--blanco);
+    }
+
+    .portafolio .section-label { color: rgba(255,255,255,0.4); }
+    .portafolio .section-title { color: var(--blanco); }
+
+    .portafolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .port-item {
+      position: relative;
+      border-radius: 14px;
+      overflow: hidden;
+      background: #1a1a1a;
+    }
+
+    .port-item img {
+      width: 100%;
+      display: block;
+      transition: transform 0.4s;
+      aspect-ratio: 16/10;
+      object-fit: cover;
+    }
+
+    .port-item:hover img { transform: scale(1.04); }
+
+    .port-label {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(transparent, rgba(0,0,0,0.85));
+      color: var(--blanco);
+      padding: 28px 16px 14px;
+      font-size: 14px;
+      font-weight: 600;
+      font-family: 'Sora', sans-serif;
+    }
+
+    /* ===== TESTIMONIOS ===== */
+    .testimonios {
+      padding: 72px 24px;
+      background: var(--gris-claro);
+    }
+
+    .testimonios-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      max-width: 960px;
+      margin: 40px auto 0;
+    }
+
+    .testimonio {
+      background: var(--blanco);
+      border-radius: 16px;
+      padding: 28px 24px;
+      border: 1px solid #e8e8e0;
+    }
+
+    .estrellas { color: #f59e0b; font-size: 15px; margin-bottom: 14px; }
+
+    .testimonio p {
+      font-size: 15px;
+      color: #333;
+      line-height: 1.65;
+      margin-bottom: 18px;
+      font-style: italic;
+    }
+
+    .autor {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .avatar {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: var(--negro);
+      color: var(--acento2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      font-weight: 700;
+      font-family: 'Sora', sans-serif;
+      flex-shrink: 0;
+    }
+
+    .autor-info strong { font-size: 14px; font-weight: 600; display: block; }
+    .autor-info span { font-size: 12px; color: var(--gris-texto); }
+
+    /* ===== CTA FINAL ===== */
+    .cta-final {
+      background: var(--negro);
+      color: var(--blanco);
+      padding: 80px 24px;
+      text-align: center;
+    }
+
+    .cta-final h2 {
+      font-family: 'Sora', sans-serif;
+      font-size: clamp(24px, 5vw, 42px);
+      font-weight: 700;
+      margin-bottom: 16px;
+      max-width: 680px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta-final h2 em {
+      font-style: normal;
+      color: var(--acento2);
+    }
+
+    .cta-final p {
+      color: rgba(255,255,255,0.55);
+      font-size: 16px;
+      margin-bottom: 36px;
+    }
+
+    .garantia {
+      margin-top: 24px;
+      font-size: 13px;
+      color: rgba(255,255,255,0.4);
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: #080808;
+      color: rgba(255,255,255,0.4);
+      padding: 32px 24px;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    footer strong { color: rgba(255,255,255,0.7); }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 14px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      color: rgba(255,255,255,0.4);
+      text-decoration: none;
+      font-size: 13px;
+    }
+
+    /* ===== BOTÓN WHATSAPP FLOTANTE ===== */
+    .wa-float {
+      position: fixed;
+      bottom: 28px;
+      right: 24px;
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--verde);
+      color: var(--blanco);
+      padding: 14px 20px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 700;
+      box-shadow: 0 4px 24px rgba(37,211,102,0.4);
+      transition: transform 0.2s, box-shadow 0.2s;
+      animation: pulse-wa 2.5s infinite;
+    }
+
+    .wa-float:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 32px rgba(37,211,102,0.55);
+    }
+
+    .wa-float svg {
+      width: 22px;
+      height: 22px;
+      flex-shrink: 0;
+    }
+
+    @keyframes pulse-wa {
+      0%, 100% { box-shadow: 0 4px 24px rgba(37,211,102,0.4); }
+      50% { box-shadow: 0 4px 36px rgba(37,211,102,0.65); }
+    }
+
+    .wa-text-mobile { display: none; }
+
+    @media (max-width: 480px) {
+      .wa-float { padding: 14px 16px; }
+      .wa-text-desktop { display: none; }
+      .wa-text-mobile { display: inline; }
+      
+      /* Asegura que en móviles muy pequeños el logo mantenga proporción sin empujar demasiado */
+      .logo-img { height: 50px; } 
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">
+      <img src="web arquitects.png" alt="Logo Web Architects" class="logo-img" />
+    </div>
+    <div class="header-right-container">
+      <a href="https://wa.me/525551031461?text=Hola,%20quiero%20información%20sobre%20mi%20landing%20page" class="header-cta" aria-label="Contactar por WhatsApp">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.557 4.118 1.532 5.845L.057 23.486a.5.5 0 0 0 .611.61l5.76-1.508A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.74 9.74 0 0 1-5.031-1.396l-.36-.214-3.733.977.999-3.64-.234-.374A9.716 9.716 0 0 1 2.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+        Cotizar ahora
+      </a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="badge">🚀 Morelos, México — Entrega en 5 días</div>
+
+    <h1>Tu negocio en Google con una<br><em>Landing Page que vende</em></h1>
+
+    <p class="hero-sub">Diseño web profesional con SEO, botón de WhatsApp y llamados a la acción que convierten visitantes en clientes reales.</p>
+
+    <p class="precio-badge">Todo incluido por solo <strong>$4,599 MXN</strong> — pago único</p>
+
+    <div class="hero-btns">
+      <a href="https://wa.me/525551031461?text=Hola,%20quiero%20mi%20landing%20page%20profesional%20por%20favor" class="btn-primary" aria-label="Quiero mi landing page">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.557 4.118 1.532 5.845L.057 23.486a.5.5 0 0 0 .611.61l5.76-1.508A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.74 9.74 0 0 1-5.031-1.396l-.36-.214-3.733.977.999-3.64-.234-.374A9.716 9.716 0 0 1 2.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+        Quiero mi landing page
+      </a>
+      <a href="#portafolio" class="btn-secondary">Ver trabajos →</a>
+    </div>
+
+    <p class="urgencia">⚡ Solo <span>3 espacios disponibles</span> este mes</p>
+  </section>
+
+  <!-- BENEFICIOS -->
+  <section class="beneficios">
+    <p class="section-label">¿Qué obtienes?</p>
+    <h2 class="section-title">Todo lo que necesita tu negocio para crecer online</h2>
+    <div class="beneficios-grid">
+      <div class="benefit-card">
+        <span class="benefit-icon">🌐</span>
+        <h3>Hosting + Dominio incluidos</h3>
+        <p>Tu dominio .com o .com.mx y hospedaje por un año completo sin costo adicional.</p>
+      </div>
+      <div class="benefit-card">
+        <span class="benefit-icon">⚡</span>
+        <h3>Carga ultrarrápida</h3>
+        <p>Código HTML limpio y optimizado para móviles. Sin plugins lentos ni WordPress.</p>
+      </div>
+      <div class="benefit-card">
+        <span class="benefit-icon">🔍</span>
+        <h3>SEO on-page</h3>
+        <p>Palabras clave estratégicas para que Google te encuentre y te ponga arriba.</p>
+      </div>
+      <div class="benefit-card">
+        <span class="benefit-icon">💬</span>
+        <h3>Botón WhatsApp integrado</h3>
+        <p>Tus clientes te escriben directo desde la página con un mensaje personalizado.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUÉ INCLUYE -->
+  <section class="incluye">
+    <p class="section-label" style="text-align:center;">Detalles del paquete</p>
+    <h2 class="section-title" style="text-align:center;">¿Qué incluye exactamente?</h2>
+    <ul class="incluye-lista">
+      <li><span class="check">✓</span> Diseño personalizado para tu giro de negocio</li>
+      <li><span class="check">✓</span> Hosting por 12 meses incluido</li>
+      <li><span class="check">✓</span> Dominio .com o .com.mx por 1 año</li>
+      <li><span class="check">✓</span> SEO on-page con palabras clave locales</li>
+      <li><span class="check">✓</span> Botón flotante de WhatsApp</li>
+      <li><span class="check">✓</span> Llamados a la acción optimizados</li>
+      <li><span class="check">✓</span> Diseño 100% responsivo para móvil</li>
+      <li><span class="check">✓</span> Certificado SSL (candado de seguridad)</li>
+      <li><span class="check">✓</span> Entrega en 5 días hábiles</li>
+      <li><span class="check">✓</span> 1 ronda de cambios incluida</li>
+    </ul>
+  </section>
+
+  <!-- PORTAFOLIO -->
+  <section class="portafolio" id="portafolio">
+    <p class="section-label">Trabajos recientes</p>
+    <h2 class="section-title">Lo que hemos creado</h2>
+    <div class="portafolio-grid">
+      <div class="port-item">
+        <img src="https://patrianos.github.io/tulandingpage/legal1.png" alt="Página web para despacho de abogados en Morelos" loading="lazy" />
+        <div class="port-label">Corporativo / Abogados</div>
+      </div>
+      <div class="port-item">
+        <img src="https://patrianos.github.io/tulandingpage/catalogo1.png" alt="Catálogo digital con venta por WhatsApp" loading="lazy" />
+        <div class="port-label">Catálogo con WhatsApp</div>
+      </div>
+      <div class="port-item">
+        <img src="https://patrianos.github.io/tulandingpage/digital1.png" alt="Landing page para venta de productos digitales" loading="lazy" />
+        <div class="port-label">Venta de productos digitales</div>
+      </div>
+      <div class="port-item">
+        <img src="https://patrianos.github.io/tulandingpage/landing1.png" alt="Landing page que convierte con SEO" loading="lazy" />
+        <div class="port-label">Landing Page</div>
+      </div>
+      <div class="port-item">
+        <img src="https://patrianos.github.io/tulandingpage/fitness1.png" alt="Página web para gimnasio o entrenador personal" loading="lazy" />
+        <div class="port-label">Fitness / Entrenadores</div>
+      </div>
+      <div class="port-item">
+        <img src="https://patrianos.github.io/tulandingpage/inmobiliaria1.png" alt="Página web para inmobiliaria en Morelos" loading="lazy" />
+        <div class="port-label">Inmobiliaria</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIOS -->
+  <section class="testimonios">
+    <p class="section-label">Clientes satisfied</p>
+    <h2 class="section-title">Lo que dicen quienes ya confiaron en nosotros</h2>
+    <div class="testimonios-grid">
+      <div class="testimonio">
+        <div class="estrellas">★★★★★</div>
+        <p>"Excelente servicio, mi página quedó lista en menos de una semana y las ventas por WhatsApp no han parado."</p>
+        <div class="autor">
+          <div class="avatar">RM</div>
+          <div class="autor-info">
+            <strong>Ricardo M.</strong>
+            <span>Dueño de negocio</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonio">
+        <div class="estrellas">★★★★★</div>
+        <p>"La velocidad de carga es increíble. Superaron mis expectativas con el diseño del catálogo digital."</p>
+        <div class="autor">
+          <div class="avatar">EG</div>
+          <div class="autor-info">
+            <strong>Elena García</strong>
+            <span>Emprendedora</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonio">
+        <div class="estrellas">★★★★★</div>
+        <p>"Profesionales y directos. El SEO realmente funciona, aparezco en los primeros resultados de búsqueda."</p>
+        <div class="autor">
+          <div class="avatar">JS</div>
+          <div class="autor-info">
+            <strong>Javier Solís</strong>
+            <span>Servicios legales</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta-final">
+    <h2>¿Listo para que tus clientes<br><em>te encuentren en Google?</em></h2>
+    <p>Hosting, dominio y SEO incluidos. Entrega en 5 días.<br>Solo quedan <strong style="color:#ff6b6b;">3 espacios disponibles</strong> este mes.</p>
+    <a href="https://wa.me/525551031461?text=Hola,%20quiero%20cotizar%20mi%20landing%20page%20por%20favor" class="btn-primary" style="font-size:17px; padding:18px 40px;" aria-label="Cotizar landing page por WhatsApp">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.557 4.118 1.532 5.845L.057 23.486a.5.5 0 0 0 .611.61l5.76-1.508A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.74 9.74 0 0 1-5.031-1.396l-.36-.214-3.733.977.999-3.64-.234-.374A9.716 9.716 0 0 1 2.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+      Cotizar mi landing page ahora
+    </a>
+    <p class="garantia">✔ Sin contratos · ✔ Pago único · ✔ Entrega garantizada en 5 días</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-links">
+      <a href="#portafolio">Portafolio</a>
+      <a href="https://wa.me/525551031461" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+    <p><strong>Web Architects</strong> · Morelos, México · © 2026 · $4,599 MXN todo incluido</p>
+  </footer>
+
+  <!-- BOTÓN WHATSAPP FLOTANTE -->
+  <a
+    href="https://wa.me/525551031461?text=Hola,%20me%20interesa%20una%20landing%20page%20profesional"
+    class="wa-float"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Contactar por WhatsApp"
+  >
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.557 4.118 1.532 5.845L.057 23.486a.5.5 0 0 0 .611.61l5.76-1.508A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.74 9.74 0 0 1-5.031-1.396l-.36-.214-3.733.977.999-3.64-.234-.374A9.716 9.716 0 0 1 2.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/>
+    </svg>
+    <span class="wa-text-desktop">Escribir por WhatsApp</span>
+    <span class="wa-text-mobile">WhatsApp</span>
+  </a>
+
+</body>
+</html>
